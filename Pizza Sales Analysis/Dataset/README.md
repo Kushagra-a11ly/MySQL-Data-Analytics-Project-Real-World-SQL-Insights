@@ -66,18 +66,11 @@ Build strong MySQL analytical skills
 🧠 SQL Skills Demonstrated
 
 Complex JOIN operations
-
 GROUP BY + Aggregations
-
 Window functions (if used)
-
 CTEs for clean queries
-
 Date & time analysis
-
 Ranking & performance evaluation
-
 KPI generation
-
 Real-world business questions answered using SQL
 
