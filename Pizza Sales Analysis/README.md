@@ -10,42 +10,63 @@ All insights were generated using MySQL 8, ensuring modern SQL features and high
 📁 Dataset Description (With Correct Columns)
 
 The dataset consists of four CSV files representing a realistic pizza store database:
+
 1. order_details.csv
+
 Contains item-level details for each order.
 Columns:
+
 order_details_id — Unique identifier for each order item
+
 order_id — Connects to the orders table
+
 pizza_id — Identifies the specific pizza
+
 quantity — Number of units ordered
 
-2. orders.csv
+3. orders.csv
 
 Stores each order’s timestamp.
+
 Columns:
+
 order_id — Unique ID for each order
+
 date — Date of the order
+
 time — Time of the order
 
 3. pizza_types.csv
 Contains pizza category and ingredients.
+
 Columns:
+
 pizza_type_id — Unique identifier for each type
+
 name — Name of the pizza
+
 category — Category (Veggie, Classic, Supreme, etc.)
+
 ingredients — Ingredient list
 
-4. pizzas.csv
+5. pizzas.csv
 
 Links pizza type with size and price.
+
 Columns:
+
 pizza_id — Unique pizza ID
+
 pizza_type_id — Connects to the pizza types table
+
 size — S, M, L, XL, XXL
+
 price — Price of the pizza
 
 🧱 Database Structure Overview
 
 The database is relational and connected as follows:
+
 orders → one order per row
 
 order_details → one line item per order, connected via order_id
