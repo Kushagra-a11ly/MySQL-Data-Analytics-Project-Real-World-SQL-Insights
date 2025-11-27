@@ -7,7 +7,7 @@ The goal of the project is to explore restaurant sales performance, customer ord
 The repository showcases practical SQL skills widely used in analytics roles, including data cleaning, joins, aggregations, window functions, performance analysis, and KPI derivation. 
 All insights were generated using MySQL 8, ensuring modern SQL features and high-quality analytical reporting.
 
-📁 Dataset Description (With Correct Columns)
+📁 Dataset Description
 
 The dataset consists of four CSV files representing a realistic pizza store database:
 
