@@ -47,9 +47,13 @@ price — Price of the pizza
 
 The database is relational and connected as follows:
 orders → one order per row
+
 order_details → one line item per order, connected via order_id
+
 pizzas → defines pizza size & price
+
 pizza_types → defines pizza category & ingredients
+
 This structure allows detailed analysis across product, order, and revenue dimensions.
 
 🎯 Project Objectives
