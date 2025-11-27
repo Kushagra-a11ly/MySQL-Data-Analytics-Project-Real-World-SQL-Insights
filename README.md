@@ -18,6 +18,7 @@ ERD & Schema Design
 GitHub for documentation
 
 🧵 Project Steps
+
 1️⃣ Data Import & Setup
 Created database schema and tables
 Imported CSV data into MySQL
