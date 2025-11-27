@@ -24,7 +24,7 @@ pizza_id — Identifies the specific pizza
 
 quantity — Number of units ordered
 
-3. orders.csv
+2. orders.csv
 
 Stores each order’s timestamp.
 
@@ -49,7 +49,7 @@ category — Category (Veggie, Classic, Supreme, etc.)
 
 ingredients — Ingredient list
 
-5. pizzas.csv
+4. pizzas.csv
 
 Links pizza type with size and price.
 
@@ -67,13 +67,13 @@ price — Price of the pizza
 
 The database is relational and connected as follows:
 
-orders → one order per row
+1.orders → one order per row
 
-order_details → one line item per order, connected via order_id
+2.order_details → one line item per order, connected via order_id
 
-pizzas → defines pizza size & price
+3.pizzas → defines pizza size & price
 
-pizza_types → defines pizza category & ingredients
+4.pizza_types → defines pizza category & ingredients
 
 This structure allows detailed analysis across product, order, and revenue dimensions.
 
