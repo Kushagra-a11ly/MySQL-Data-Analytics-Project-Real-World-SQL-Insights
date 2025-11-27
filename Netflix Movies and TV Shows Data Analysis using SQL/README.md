@@ -2,25 +2,25 @@ Netflix Movies & TV Shows — Data Analysis using MySQL
 
 📘 Project Overview
 
-This project delivers deep analytical insights from the popular Netflix Movies and TV Shows dataset using MySQL. 
+1.This project delivers deep analytical insights from the popular Netflix Movies and TV Shows dataset using MySQL. 
 
-It focuses on exploring global streaming content trends, uncovering patterns in genres, release years, cast collaborations, ratings, and country-wise distribution. 
+2.It focuses on exploring global streaming content trends, uncovering patterns in genres, release years, cast collaborations, ratings, and country-wise distribution. 
 
-The goal is to demonstrate real-world SQL data analysis skills, showcasing the ability to convert raw datasets into business-ready insights.
+3.The goal is to demonstrate real-world SQL data analysis skills, showcasing the ability to convert raw datasets into business-ready insights.
 
 🎯 Objectives
 
-Analyze the content library structure and trends
+1.Analyze the content library structure and trends
 
-Explore genre and category distributions
+2.Explore genre and category distributions
 
-Study country-wise content production
+3.Study country-wise content production
 
-Examine director and cast patterns
+4.Examine director and cast patterns
 
-Investigate ratings, durations, and release-year evolution
+5.Investigate ratings, durations, and release-year evolution
 
-Create SQL-based insights similar to industry analytics tasks
+6.Create SQL-based insights similar to industry analytics tasks
 
 🗂 Dataset Description
 
@@ -28,85 +28,75 @@ This dataset contains all movies and TV shows available on Netflix, along with e
 
 Key Columns:
 
-show_id – Unique identifier
+1.show_id – Unique identifier
 
-type – Movie or TV Show
+2.type – Movie or TV Show
 
-title – Name of the content
+3.title – Name of the content
 
-director – Director(s)
+4.director – Director(s)
 
-cast – Main actors
+5.cast – Main actors
 
-country – Origin country
+6.country – Origin country
 
-date_added – When content was added to Netflix
+7.date_added – When content was added to Netflix
 
-release_year – Original release year
+8.release_year – Original release year
 
-rating – Content rating (TV-MA, PG, etc.)
+9.rating – Content rating (TV-MA, PG, etc.)
 
-duration – Movie duration or number of seasons
+10.duration – Movie duration or number of seasons
 
-listed_in – Genre/categories
+11.listed_in – Genre/categories
 
-description – Summary of the content
+12.description – Summary of the content
 
 🔍 What This Project Demonstrates
 
-Clean, professional MySQL query-writing
+1.Clean, professional MySQL query-writing
 
-Complex filtering and aggregation
+2.Complex filtering and aggregation
 
-Pattern analysis and text parsing
+3.Pattern analysis and text parsing
 
-Date-based trend discovery
+4.Date-based trend discovery
 
-Real-world analytics thinking
+5.Real-world analytics thinking
 
-Industry-standard SQL exploration techniques
+6.Industry-standard SQL exploration techniques
 
 🚀 Insights Answered
 
-Most dominant genres on Netflix
+1.Most dominant genres on Netflix
 
-Countries producing the maximum content
+2.Countries producing the maximum content
 
-Most frequent actor collaborations
+3.Most frequent actor collaborations
 
-Rating distribution and audience segmentation
+4.Rating distribution and audience segmentation
 
-Year-wise evolution of movies vs TV shows
+5.Year-wise evolution of movies vs TV shows
 
-Longest-running shows and longest movies
+6.Longest-running shows and longest movies
 
-Directors with the highest number of titles
+7.Directors with the highest number of titles
 
-Keyword frequency patterns in descriptions
+8.Keyword frequency patterns in descriptions
 
 🧩 Skills Demonstrated
 
-MySQL Querying
+1.MySQL Querying
 
-Data Cleaning with SQL
+2.Data Cleaning with SQL
 
-Exploratory Data Analysis
+3.Exploratory Data Analysis
 
-Joins, Aggregations, Window Functions
+4.Joins, Aggregations, Window Functions
 
-Text Analysis using SQL functions
+5.Text Analysis using SQL functions
 
-Trend and pattern discovery
-
-📌 Ideal For
-
-Data Analytics Portfolios
-
-Recruiter Demonstrations
-
-SQL Skill Showcases
-
-Academic and Personal Projects
+6.Trend and pattern discovery
 
 
 
