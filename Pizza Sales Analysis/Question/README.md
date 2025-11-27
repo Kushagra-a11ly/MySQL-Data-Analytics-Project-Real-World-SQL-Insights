@@ -1,14 +1,13 @@
-Questions – Python Conditional Practice
+Questions
 
 📘 Overview
-The questions/ folder contains structured Python practice questions designed to help learners progress from basic to advanced levels in conditional statements, logical reasoning, and problem-solving. It is ideal for self-practice, interviews, or project-based learning.
+
+The folder contains structured Python practice questions designed to help learners progress from basic to advanced levels in conditional statements, logical reasoning, and problem-solving. 
+It is ideal for self-practice, interviews, or project-based learning.
 
 📂 Folder Structure
-questions/
-│
-├── basic_questions.md          # Introductory questions on Python conditionals
-├── intermediate_questions.md   # Medium-difficulty problems for applied understanding
-└── advanced_questions.md       # Complex challenges requiring deeper logic and problem-solving
+
+Questions.sql       # Contains question from Basic to Advanced 
 
 🎯 Purpose
 
