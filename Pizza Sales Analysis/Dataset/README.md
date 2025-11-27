@@ -1,76 +1,90 @@
-
 🧾 Dataset Description
 
-This dataset represents actual pizza store operations and consists of four linked tables.
+This project is built on a structured, relational dataset that represents real-world pizza store operations. The data is organized into four interconnected tables, enabling detailed analysis across orders, items, pricing, categories, and ingredients.
 
 1. order_details.csv
-Contains item-level details for every order.
+
+Contains line-item information for each order.
 Columns:
 
-order_details_id – Unique ID
+order_details_id – Unique identifier for each item entry
 
-order_id – Links to orders table
+order_id – Links to the orders table
 
-pizza_id – Item ordered
+pizza_id – Specifies the pizza ordered
 
-quantity – Units ordered
+quantity – Number of units purchased
 
 2. orders.csv
-Stores overall order timestamps.
+
+Stores the core order information, including timestamps.
 Columns:
 
 order_id
 
-date
+date – Date of the transaction
 
-time
+time – Time of the transaction
 
 3. pizzas.csv
-Defines pizza size and price.
+
+Defines pizza variations based on size and price.
 Columns:
 
-pizza_id
+pizza_id – Unique pizza SKU
 
-pizza_type_id
+pizza_type_id – Links to pizza types
 
-size
+size – S, M, L, XL, XXL
 
-price
+price – Price of the specific pizza variant
 
 4. pizza_types.csv
-Describes pizza names, categories, and ingredients.
+
+Describes high-level pizza characteristics.
 Columns:
 
 pizza_type_id
 
-name
+name – Pizza name
 
-category
+category – Category (Classic, Supreme, Veggie, etc.)
 
-ingredients
+ingredients – Complete ingredient list
 
 🎯 Objectives of This Project
 
-Analyze total sales, revenue, and order volume
+This project aims to deliver a complete SQL-based analytical workflow by exploring key business and operational questions. The objectives include:
 
-Identify best-selling pizzas, sizes, and categories
+Analyzing total sales, revenue, and order volume
 
-Understand peak ordering hours and days
+Identifying best-selling pizzas, sizes, and categories
 
-Analyze ingredient-level trends
+Understanding peak ordering hours, days, and seasonal trends
 
-Identify areas for menu improvement & promotions
+Analyzing ingredient-level patterns to understand customer preferences
 
-Build strong MySQL analytical skills
+Providing menu optimization and promotional recommendations
+
+Strengthening MySQL analytical, modeling, and problem-solving skills
 
 🧠 SQL Skills Demonstrated
 
-Complex JOIN operations
-GROUP BY + Aggregations
-Window functions (if used)
-CTEs for clean queries
-Date & time analysis
-Ranking & performance evaluation
-KPI generation
-Real-world business questions answered using SQL
+This project showcases strong SQL competency through a diverse set of queries and analytical techniques, including:
+
+Complex JOIN operations across multiple tables
+
+GROUP BY aggregations for sales and performance metrics
+
+Window functions for ranking, running totals, and comparisons
+
+CTEs (Common Table Expressions) for clean, modular query design
+
+Date and time analysis for trend identification
+
+Ranking and performance evaluation of items and categories
+
+KPI generation, including revenue, order count, AOV, and item performance
+
+Answering real-world business questions through SQL-driven insights
 
