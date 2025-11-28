@@ -66,16 +66,23 @@ High-value customer identification (RFM-style queries)
 Window functions
 
 CTEs
+
 Subqueries
+
 CROSS JOIN & SELF JOIN for behaviour analysis
+
 Conditional aggregations
+
 String & date functions
 
 📈 Results & Insights
   
 Identified top-performing categories and products
+
 Found key demographic groups driving sales
+
 Analyzed promo code usage, discount impact, and repeat purchase behaviour
+
 Generated data-driven recommendations applicable to business teams (marketing, supply chain, sales)
 
 ▶️ How to Run
