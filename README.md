@@ -76,20 +76,19 @@ Conditional aggregations
 String & date functions
 
 📈 Results & Insights
-
-Identified top-performing categories and products
-
-Found key demographic groups driving sales
-
-Analyzed promo code usage, discount impact, and repeat purchase behaviour
-
-Generated data-driven recommendations applicable to business teams (marketing, supply chain, sales)
+  
+  Identified top-performing categories and products
+  
+  Found key demographic groups driving sales
+  
+  Analyzed promo code usage, discount impact, and repeat purchase behaviour
+  
+  Generated data-driven recommendations applicable to business teams (marketing, supply chain, sales)
 
 ▶️ How to Run
 
-Clone the repository
-
-Open MySQL Workbench
+  Clone the repository
+  Open MySQL Workbench
 
 Import the dataset
 
