@@ -2,14 +2,15 @@
 
 📊 Overview
 
-This project focuses entirely on real-world SQL analytics using MySQL.
+-> This project focuses entirely on real-world SQL analytics using MySQL.
 
-It demonstrates how analytical queries can uncover business insights from a structured dataset. The workflow includes loading the dataset into MySQL, cleaning and preparing tables, writing 
+-> It demonstrates how analytical queries can uncover business insights from a structured dataset. 
+-> The workflow includes loading the dataset into MySQL, cleaning and preparing tables, writing 
 analytical queries, and generating insights that reflect real industry use-cases such as sales performance, customer behaviour, product trends, and marketing effectiveness.
 
 📁 Dataset
 
-The dataset used in this project contains customer-level purchase details, product metadata, demographic information, and transaction patterns.
+ The dataset used in this project contains customer-level purchase details, product metadata, demographic information, and transaction patterns.
 
 It is stored as a cleaned MySQL table for analysis.
 
