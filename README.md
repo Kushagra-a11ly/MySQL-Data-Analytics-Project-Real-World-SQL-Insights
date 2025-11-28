@@ -1,5 +1,7 @@
 📌 MySQL Data Analytics Project – Real-World SQL Insights
+
 📊 Project Overview
+
 This project is built entirely around real-world SQL analytics using MySQL, demonstrating how structured datasets can be transformed into meaningful business insights. 
 
 It replicates industry workflows, including importing data, cleaning it, designing tables, performing exploratory SQL analysis, and developing powerful business-oriented queries.
@@ -37,12 +39,14 @@ This dataset is stored as a clean MySQL table, ready for analytics and query exe
 •	Formatted dates, numeric fields, and text attributes
 
 2️⃣ SQL Exploratory Analysis
+
 •	Generated summary statistics
 •	Checked for missing values, outliers, and duplicates
 •	Validated data types, constraints, and field integrity
 •	Profiled demographic, transactional, and product variables
 
 3️⃣ Real-World Business Queries
+
 Performed analytical SQL queries covering:
 •	Customer segmentation & demographic patterns
 •	Product-level and category-level performance
@@ -53,6 +57,7 @@ Performed analytical SQL queries covering:
 •	High-value customer identification (RFM-style metrics)
 
 4️⃣ Advanced SQL Techniques Applied
+
 •	Window Functions for ranking & retention analysis
 •	CTEs for modular query design
 •	Subqueries for targeted calculations
