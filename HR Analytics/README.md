@@ -94,47 +94,47 @@ These topics form the foundation of SQL and are used in simple data retrieval an
 
 1. Data Retrieval
 
-a.SELECT
+a. SELECT
 
-b.DISTINCT
+b. DISTINCT
 
-c.Column selection
+c. Column selection
 
-d.ORDER BY
+d. ORDER BY
 
 2. Filtering
 
-a.WHERE
+a. WHERE
 
-b.Comparison operators (=, >, <, !=)
+b. Comparison operators (=, >, <, !=)
 
-c.BETWEEN, IN, LIKE
+c. BETWEEN, IN, LIKE
 
 3. Basic Aggregations
 
-a.COUNT()
+a. COUNT()
 
-b.SUM()
+b. SUM()
 
-c.AVG()
+c. AVG()
 
-d.MIN()
+d. MIN()
 
-e.MAX()
+e. MAX()
 
 4. Grouping Data
 
-a.GROUP BY
+a. GROUP BY
 
-b.HAVING
+b. HAVING
 
 5. Basic Table Operations
 
-a.CREATE TABLE
+a. CREATE TABLE
 
-b.ALTER TABLE
+b. ALTER TABLE
 
-c.DROP TABLE
+c. DROP TABLE
 
 🔸 INTERMEDIATE SQL TOPICS
 
@@ -142,58 +142,58 @@ Used when working with multiple tables, optimizing queries, and creating analyti
 
 1. Joins & Set Operations
 
-a.INNER JOIN
+a. INNER JOIN
 
-b.LEFT JOIN
+b. LEFT JOIN
 
-c.RIGHT JOIN
+c. RIGHT JOIN
 
-d.FULL JOIN
+d. FULL JOIN
 
-e.UNION
+e. UNION
 
-f.UNION ALL
+f. UNION ALL
 
 2. Subqueries
 
-a.Subquery in WHERE
+a. Subquery in WHERE
 
-b.Subquery in SELECT
+b. Subquery in SELECT
 
-c.Correlated subqueries
+c. Correlated subqueries
 
 3. String & Date Functions
 
-a.CONCAT()
+a. CONCAT()
 
-b.UPPER(), LOWER()
+b. UPPER(), LOWER()
 
-c.SUBSTRING()
+c. SUBSTRING()
 
-d.DATEDIFF(), DATE_FORMAT()
+d. DATEDIFF(), DATE_FORMAT()
 
 4. Conditional Logic
 
-a.CASE WHEN
+a. CASE WHEN
 
-b.IFNULL(), COALESCE()
+b. IFNULL(), COALESCE()
 
 5. Views
 
-a.CREATE VIEW
+a. CREATE VIEW
 
-b.REPLACE VIEW
+b. REPLACE VIEW
 
-c.DROP VIEW
+c. DROP VIEW
 
 6. Constraints & Keys
 
-a.PRIMARY KEY
+a. PRIMARY KEY
 
-b.FOREIGN KEY
+b. FOREIGN KEY
 
-c.UNIQUE
+c. UNIQUE
 
-d.CHECK
+d. CHECK
 
 Self-Joins
