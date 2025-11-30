@@ -10,45 +10,81 @@ Table: hr_analytics
 
 Column Name	Data Type
 
-EmpID -->	TEXT
-Age	  -->  INT
-Age_Group -->	TEXT
-Attrition -->	TEXT
-Business_Travel -->	TEXT
-DailyRate -->	INT
-Department -->	TEXT
-Distance_FromHome -->	TEXT
-Education -->	INT
-Education_Field -->	TEXT
-Employee_Count --> INT
-Employee_Number -->	INT
-Environment_Satisfaction -->	INT
-Gender -->	TEXT
-Gender -->	TEXT
-Hourly_Rate --> 	INT
-Job_Involvement -->	INT
-JobLevel -->	INT
-Job_Role -->	TEXT
-Job_Satisfaction -->	INT
-Marital_Status -->	TEXT
-MonthlyIncome -->	INT
-Salary_Slab	--> TEXT
-Monthly_Rate --> INT
-Number_Companies_Worked -->	INT
-Over_18 -->	TEXT
-OverTime -->	TEXT
-Percent_Salary_Hike -->	INT
-Performance_Rating -->	INT
-Relationship_Satisfaction -->	INT
-Standard_Hours --> INT
-Stock_Option_Level -->	INT
-Total_Working_Years -->	INT
-Training_Times_Last_Year -->	INT
-Work_Life_Balance -->	INT
-Years_At_Company -->	INT
-Years_In_Current_Role -->	INT
-Years_Since_Last_Promotion -->	INT
-Years_With_Current_Manager -->	INT
+1.EmpID -->	TEXT
+
+2.Age	  -->  INT
+
+3.Age_Group -->	TEXT
+
+4.Attrition -->	TEXT
+
+5.Business_Travel -->	TEXT
+
+6.DailyRate -->	INT
+
+7.Department -->	TEXT
+
+8.Distance_FromHome -->	TEXT
+
+9.Education -->	INT
+
+10.Education_Field -->	TEXT
+
+11.Employee_Count --> INT
+
+12.Employee_Number -->	INT
+
+13.Environment_Satisfaction -->	INT
+
+14.Gender -->	TEXT
+
+15.Hourly_Rate --> 	INT
+
+16.Job_Involvement -->	INT
+
+17.JobLevel -->	INT
+
+18.Job_Role -->	TEXT
+
+19.Job_Satisfaction -->	INT
+
+20.Marital_Status -->	TEXT
+
+21.MonthlyIncome -->	INT
+
+22.Salary_Slab	--> TEXT
+
+23.Monthly_Rate --> INT
+
+24.Number_Companies_Worked -->	INT
+
+25.Over_18 -->	TEXT
+
+26.OverTime -->	TEXT
+
+27.Percent_Salary_Hike -->	INT
+
+28.Performance_Rating -->	INT
+
+29.Relationship_Satisfaction -->	INT
+
+30.Standard_Hours --> INT
+
+31.Stock_Option_Level -->	INT
+
+32.Total_Working_Years -->	INT
+
+33.Training_Times_Last_Year -->	INT
+
+34.Work_Life_Balance -->	INT
+
+35.Years_At_Company -->	INT
+
+36.Years_In_Current_Role -->	INT
+
+37.Years_Since_Last_Promotion -->	INT
+
+38.Years_With_Current_Manager -->	INT
 
 🧠 Topics Covered
 
