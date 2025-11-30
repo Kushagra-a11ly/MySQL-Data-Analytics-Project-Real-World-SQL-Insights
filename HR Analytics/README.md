@@ -88,42 +88,112 @@ Column Name	Data Type
 
 🧠 Topics Covered
 
-✔ Basic SQL
+🔹 BASIC SQL TOPICS
 
-SELECT, WHERE, ORDER BY, LIMIT
+These topics form the foundation of SQL and are used in simple data retrieval and filtering.
 
-DISTINCT
+1. Data Retrieval
 
-GROUP BY, HAVING
+a.SELECT
 
-Aggregate Functions
+b.DISTINCT
 
-✔ Intermediate SQL
+c.Column selection
 
-Joins (Inner, Left, Right)
+d.ORDER BY
 
-Subqueries
+2. Filtering
 
-CASE Expressions
+a.WHERE
 
-Data Cleaning with ALTER, UPDATE
+b.Comparison operators (=, >, <, !=)
 
-✔ Advanced SQL
+c.BETWEEN, IN, LIKE
 
-CTEs
+3. Basic Aggregations
 
-Window Functions
+a.COUNT()
 
-Ranking Functions
+b.SUM()
 
-Running Totals
+c.AVG()
 
-Percentiles
+d.MIN()
 
-Correlated Subqueries
+e.MAX()
 
-Rollup & Cube
+4. Grouping Data
 
-Pivoting with CASE
+a.GROUP BY
+
+b.HAVING
+
+5. Basic Table Operations
+
+a.CREATE TABLE
+
+b.ALTER TABLE
+
+c.DROP TABLE
+
+🔸 INTERMEDIATE SQL TOPICS
+
+Used when working with multiple tables, optimizing queries, and creating analytical transformations.
+
+1. Joins & Set Operations
+
+a.INNER JOIN
+
+b.LEFT JOIN
+
+c.RIGHT JOIN
+
+d.FULL JOIN
+
+e.UNION
+
+f.UNION ALL
+
+2. Subqueries
+
+a.Subquery in WHERE
+
+b.Subquery in SELECT
+
+c.Correlated subqueries
+
+3. String & Date Functions
+
+a.CONCAT()
+
+b.UPPER(), LOWER()
+
+c.SUBSTRING()
+
+d.DATEDIFF(), DATE_FORMAT()
+
+4. Conditional Logic
+
+a.CASE WHEN
+
+b.IFNULL(), COALESCE()
+
+5. Views
+
+a.CREATE VIEW
+
+b.REPLACE VIEW
+
+c.DROP VIEW
+
+6. Constraints & Keys
+
+a.PRIMARY KEY
+
+b.FOREIGN KEY
+
+c.UNIQUE
+
+d.CHECK
 
 Self-Joins
