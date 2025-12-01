@@ -2,70 +2,70 @@
 
 📊 Project Overview
 
-•	This project is built entirely around real-world SQL analytics using MySQL, demonstrating how structured datasets can be transformed into meaningful business insights. 
-•	It replicates industry workflows, including importing data, cleaning it, designing tables, performing exploratory SQL analysis, and developing powerful business-oriented queries.
-•	The focus is on uncovering insights related to customer behaviour, product trends, sales performance, marketing effectiveness, and operational patterns, all through MySQL.
+• This project is built entirely around real-world SQL analytics using MySQL, demonstrating how structured datasets can be transformed into meaningful business insights. 
+• It replicates industry workflows, including importing data, cleaning it, designing tables, performing exploratory SQL analysis, and developing powerful business-oriented queries.
+• The focus is on uncovering insights related to customer behaviour, product trends, sales performance, marketing effectiveness, and operational patterns, all through MySQL.
 
 📁 Dataset Summary
 
 The dataset contains rich customer-level purchase data, complete with:
 
-•	Customer demographics
-•	Product and category details
-•	Pricing and discount metrics
-•	Promo usage patterns
-•	Purchase frequency & historical behaviour
-•	Payment and shipping preferences
+1.	Customer demographics
+2.	Product and category details
+3.	Pricing and discount metrics
+4.	Promo usage patterns
+5.	Purchase frequency & historical behaviour
+6.	Payment and shipping preferences
 
 This dataset is stored as a clean MySQL table, ready for analytics and query execution.
 
 🛠 Tools & Technologies
 
-•	MySQL / MySQL Workbench
-•	Advanced SQL (Joins, Aggregations, CTEs, Window Functions)
-•	ERD & Schema Design
-•	GitHub for documentation and version control
+1.	MySQL / MySQL Workbench
+2.	Advanced SQL (Joins, Aggregations, CTEs, Window Functions)
+3.	ERD & Schema Design
+4.	GitHub for documentation and version control
 🧵 Project Workflow
 
 1️⃣ Data Import & Setup
-•	Designed database schema and table structures
-•	Imported CSV data into MySQL
-•	Cleaned inconsistent values and standardized categories
-•	Renamed columns for readability
-•	Formatted dates, numeric fields, and text attributes
+1.	Designed database schema and table structures
+2.	Imported CSV data into MySQL
+3.	Cleaned inconsistent values and standardized categories
+4.	Renamed columns for readability
+5.	Formatted dates, numeric fields, and text attributes
 
 2️⃣ SQL Exploratory Analysis
-•	Generated summary statistics
-•	Checked for missing values, outliers, and duplicates
-•	Validated data types, constraints, and field integrity
-•	Profiled demographic, transactional, and product variables
+1.	Generated summary statistics
+2.	Checked for missing values, outliers, and duplicates
+3.	Validated data types, constraints, and field integrity
+4.	Profiled demographic, transactional, and product variables
 
 3️⃣ Real-World Business Queries
 Performed analytical SQL queries covering:
-•	Customer segmentation & demographic patterns
-•	Product-level and category-level performance
-•	Seasonal demand trends
-•	Impact of discounts and promo codes
-•	Repeat purchase behaviour & loyalty indicators
-•	Preferred shipping methods and payment channels
-•	High-value customer identification (RFM-style metrics)
+1.	Customer segmentation & demographic patterns
+2.	Product-level and category-level performance
+3.	Seasonal demand trends
+4.	Impact of discounts and promo codes
+5.	Repeat purchase behaviour & loyalty indicators
+6.	Preferred shipping methods and payment channels
+7.	High-value customer identification (RFM-style metrics)
 
 4️⃣ Advanced SQL Techniques Applied
 
-•	Window Functions for ranking & retention analysis
-•	CTEs for modular query design
-•	Subqueries for targeted calculations
-•	Self Joins for behavioural comparisons
-•	Conditional Aggregations for business KPIs
-•	Date & String Functions for feature extraction
+1.	Window Functions for ranking & retention analysis
+2.	CTEs for modular query design
+3.	Subqueries for targeted calculations
+4.	Self Joins for behavioural comparisons
+5.	Conditional Aggregations for business KPIs
+6.	Date & String Functions for feature extraction
 
 📈 Key Results & Insights
 
-•	Discovered high-performing product categories and revenue drivers
-•	Identified customer groups contributing the highest purchase value
-•	Analyzed promo usage trends and discount effectiveness
-•	Mapped repeat buyer behaviour and purchase intervals
-•	Derived insights useful for marketing, sales, and supply-chain teams
+1.	Discovered high-performing product categories and revenue drivers
+2.	Identified customer groups contributing the highest purchase value
+3.	Analyzed promo usage trends and discount effectiveness
+4.	Mapped repeat buyer behaviour and purchase intervals
+5.	Derived insights useful for marketing, sales, and supply-chain teams
 
 These insights can directly support business decision-making, optimize strategies, and enhance customer engagement.
 
