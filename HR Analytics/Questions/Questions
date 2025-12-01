@@ -1,0 +1,59 @@
+-- Basic Questions
+
+1.	Total employees
+2.	Attrition count
+3.	Attrition rate
+4.	Employees by gender
+5.	Employees by department
+6.	Employees by marital status
+7.	Average age
+8.	Min & Max salary
+9.	Average distance from home
+10.	Count employees with overtime
+11.	List all employees
+12.	List all employees with job role
+13.	Attrition count by gender
+14.	Average job satisfaction
+15.	Count employees by education field
+16.	Count employees per job role
+17.	Age group salary cost
+
+-- Intermediate Questions
+
+1.	Average monthly income per job level
+2.	Business travel group attrition
+3.	Department satisfaction comparison
+4.	Employees with high job satisfaction
+5.	Employees with more than 5 years of experience
+6.	Attrition among employees who travel frequently
+7.	Overtime employees with low work-life balance
+8.	Employees earning above average salary per department
+9.	Top 5 highest-earning employees
+10.	Employees with highest attrition risk factors
+11.	Employees ready for promotion
+12.	Employees with the longest tenure
+13.	Department salary expenses
+14.	Highest earning employees by job role
+15.	Employees with performance rating above average
+16.	High workload employees
+17.	Salary trend by department
+
+-- Advanced Questions
+
+1.	Salary distribution quartiles
+2.	Employees whose salary is above department median
+3.	Salary difference from previous employee using LAG
+4.	Rank employees within department based on salary (RANK/DENSE_RANK)
+5.	Moving average of monthly income (window function)
+6.	Top performing employees using window RANK
+7.	Job roles with highest average satisfaction (analytic comparison)
+8.	Department-wise percentile salary
+9.	Salary decile distribution (NTILE(10))
+10.	Work-life balance score by role
+11.	Recursive year generator (1 to Years_At_Company) using CTE RECURSIVE
+12.	Tenure percentile rank
+13.	Employees likely to leave (multi-factor weighted model)
+14.	Salary trend using window function LAG + LEAD
+15.	Job role-based ranking using DENSE_RANK
+16.	Peak performers (Performance Rating + Monthly Income combined scoring model)
+17.	Manager experience influence
