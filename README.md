@@ -1,3 +1,5 @@
+https://github.com/Kushagra-a11ly/MySQL-Data-Analytics-Project-Real-World-SQL-Insights/blob/09e814ba9d6c63e86f1c0cd974fd8aba3b17db4f/Profile%20Picture.png
+
 📚 SQL Projects Portfolio — Real-World Data Analytics with MySQL
 
 This repository is a comprehensive collection of professional SQL projects crafted to reflect the type of analytical work performed inside data-driven organizations.
