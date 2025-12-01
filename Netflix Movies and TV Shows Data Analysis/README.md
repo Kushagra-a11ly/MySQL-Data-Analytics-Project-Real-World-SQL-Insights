@@ -1,3 +1,6 @@
+![image alt](https://github.com/Kushagra-a11ly/MySQL-Data-Analytics-Project-Real-World-SQL-Insights/blob/77195de5019ba41f39d56d5db28dcdbe3a6c64d0/Netflix%20Movies%20and%20TV%20Shows%20Data%20Analysis/logo.png))
+
+
 Netflix Movies & TV Shows — Data Analysis using MySQL
 
 📘 Project Overview
