@@ -9,7 +9,7 @@
 • The focus is on uncovering insights related to customer behaviour, product trends, sales performance, marketing effectiveness, and operational patterns, all through MySQL.
 
 📁 Dataset Summary
-
+ 
 The dataset contains rich customer-level purchase data, complete with:
 
 1.	Customer demographics
