@@ -100,17 +100,27 @@ You can use this dataset to practice:
 
 🧪 Sample Queries
 -- 1. Find the top 10 most issued books
+
 SELECT book_id, COUNT(*) AS issue_count
+
 FROM issued_status
+
 GROUP BY book_id
+
 ORDER BY issue_count DESC
+
 LIMIT 10;
 
 -- 2. Books not returned yet
+
 SELECT i.issue_id, i.book_id, i.member_id
+
 FROM issued_status i
+
 LEFT JOIN return_status r
+
 ON i.issue_id = r.issue_id
+
 WHERE r.issue_id IS NULL;
 
 📝 Notes & Assumptions
