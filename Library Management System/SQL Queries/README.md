@@ -1,112 +1,142 @@
-This directory contains all SQL scripts used for creating the Library Management System database, generating tables, establishing relationships, and running analytical SQL queries ranging from basic to advanced levels.
- 
-These queries help perform real-world data analysis on books, members, employees, branches, issues, returns, and library revenue.
+This folder contains a complete collection of SQL scripts used to build, manage, and analyze a Library Management System using MySQL.
 
-📂 Contents
+The queries cover everything from database creation, table design, and data validation to analytical SQL questions categorized by difficulty levels.
 
-•	Database Creation Script
+These scripts form the backbone of the project and are intended for practicing SQL, performing data analysis, and understanding relational database concepts.
 
-•	Table Creation Queries
+📂 What This Folder Contains
 
-•	Sample Data Checks
+Section	Description
 
-•	Basic SQL Queries
+Database Setup	SQL commands to create the database and switch context.
 
-•	Intermediate SQL Queries
+Table Creation	Schema for branches, employees, members, books, issue status, and return status tables.
 
-•	Advanced SQL Queries
+Data Verification Queries	Simple SELECT statements to confirm successful data loading.
 
-🛠️ 1. Database Creation
+Basic SQL Queries	Foundational SELECT, filtering, and sorting operations.
+
+Intermediate SQL Queries	Joins, aggregations, category breakdowns, top/bottom performers.
+
+Advanced SQL Queries	Window functions, ranking, revenue analysis, trend insights, and behavior analysis.
+
+🔧 1. Database Initialization
+
+The project starts by creating and selecting the database:
 
 CREATE DATABASE library_db;
 
 USE library_db;
 
-🧱 2. Table Schema
+This ensures all tables and queries run inside a dedicated environment.
 
-This script creates six core tables used throughout the system:
+🧱 2. Table Structure & Schema Explanation
 
-1. Branch Table
+The Library Management System includes six relational tables.
 
-Stores library branch information.
+Below is a high-level overview of each table:
 
-CREATE TABLE branch (
-    branch_id VARCHAR(10) PRIMARY KEY,
-    manager_id VARCHAR(10),
-    branch_address VARCHAR(30),
-    contact_no VARCHAR(15)
-);
+📍 Branch Table
 
-2. Employees Table
+Stores information about different library locations.
 
-Stores employee details and their branch assignments.
+Column	Description
 
-CREATE TABLE employees (
-    emp_id VARCHAR(10) PRIMARY KEY,
-    emp_name VARCHAR(30),
-    position VARCHAR(30),
-    salary DECIMAL(10,2),
-    branch_id VARCHAR(10),
-    FOREIGN KEY (branch_id) REFERENCES branch(branch_id)
-);
+branch_id -->	Unique ID of the branch (Primary Key)
 
-3. Members Table
+manager_id -->	ID of the branch manager
 
-Stores registered library members.
+branch_address -->	Physical address of the branch
 
-CREATE TABLE members (
-    member_id VARCHAR(10) PRIMARY KEY,
-    member_name VARCHAR(30),
-    member_address VARCHAR(30),
-    reg_date DATE
-);
+contact_no	--> Contact number for the branch
 
-4. Books Table
+👔 Employees Table
 
-Stores all book metadata.
+Stores employee information and maps each employee to a branch.
 
-CREATE TABLE books (
-    isbn VARCHAR(50) PRIMARY KEY,
-    book_title VARCHAR(80),
-    category VARCHAR(30),
-    rental_price DECIMAL(10,2),
-    status VARCHAR(10),
-    author VARCHAR(30),
-    publisher VARCHAR(30)
-);
+Column	Description
 
-5. Issued Status Table
+emp_id -->	Unique employee ID
 
-Tracks books issued to members.
+emp_name -->	Employee name
 
-CREATE TABLE issued_status (
-    issued_id VARCHAR(10) PRIMARY KEY,
-    issued_member_id VARCHAR(30),
-    issued_book_name VARCHAR(80),
-    issued_date DATE,
-    issued_book_isbn VARCHAR(50),
-    issued_emp_id VARCHAR(10),
-    FOREIGN KEY (issued_member_id) REFERENCES members(member_id),
-    FOREIGN KEY (issued_emp_id) REFERENCES employees(emp_id),
-    FOREIGN KEY (issued_book_isbn) REFERENCES books(isbn)
-);
+position -->	Job role (e.g., Librarian, Clerk)
 
-6. Return Status Table
+salary -->	Monthly salary
 
-Tracks book returns.
+branch_id	--> Branch they work at (Foreign Key)
 
-CREATE TABLE return_status (
-    return_id VARCHAR(10) PRIMARY KEY,
-    issued_id VARCHAR(30),
-    return_book_name VARCHAR(80),
-    return_date DATE,
-    return_book_isbn VARCHAR(50),
-    FOREIGN KEY (return_book_isbn) REFERENCES books(isbn)
-);
+🧑 Members Table
+
+Represents all registered library members.
+
+Column	Description
+
+member_id -->	Unique ID for each member
+
+member_name -->	Full name
+
+member_address -->	Address of the member
+
+reg_date -->	Registration date
+
+📚 Books Table
+
+Contains all book metadata.
+
+Column	Description
+
+isbn	Unique --> book identifier
+
+book_title -->	Title of the book
+
+category -->	Genre/category
+
+rental_price -->	Cost to rent the book
+
+status -->	Availability status
+
+author -->	Author name
+
+publisher -->	Publisher name
+
+📖 Issued Status Table
+
+Tracks all issued transactions.
+
+Column	Description
+
+issued_id -->	Unique issue transaction ID
+
+issued_member_id -->	ID of the member who borrowed the book
+
+issued_book_name -->	Title of the issued book
+
+issued_date -->	Borrowing date
+
+issued_book_isbn -->	Book ISBN (Foreign Key)
+
+issued_emp_id -->	Employee who issued the book (Foreign Key)
+
+🔁 Return Status Table
+
+Logs book return transactions.
+
+Column	Description
+
+return_id -->	Unique return record ID
+
+issued_id -->	Issued record ID (FK relationship expected)
+
+return_book_name -->	Book title
+
+return_date -->	Date returned
+
+return_book_isbn -->	ISBN (Foreign Key)
 
 🔍 3. Data Validation Queries
 
-These queries ensure all tables are loaded and functioning correctly:
+These simple SELECT queries confirm table creation and data loading:
 
 SELECT * FROM books;
 
@@ -120,58 +150,39 @@ SELECT * FROM return_status;
 
 SELECT * FROM members;
 
-A. Basic SQL Queries
+🟩 4. Basic SQL Queries
+
+These queries help extract essential information from the system.
 
 ✔ List all books with category and rental price
-SELECT isbn, book_title, category, rental_price 
-FROM books;
+SELECT isbn, book_title, category, rental_price FROM books;
 
-✔ List members by latest registration
+✔ Members sorted by latest registration
 SELECT member_name, reg_date
 FROM members
 ORDER BY reg_date DESC;
 
-✔ Books in a specific category
-SELECT book_title, isbn 
-FROM books WHERE category = 'Fiction';
+✔ Books from a specific category
+SELECT book_title, isbn FROM books WHERE category = 'Fiction';
 
-✔ All employees with positions and branch info
-SELECT emp_id, emp_name, position, branch_id 
-FROM employees;
+✔ All employees and their branch assignments
+SELECT emp_id, emp_name, position, branch_id FROM employees;
 
-✔ All issued books and issue dates
-SELECT issued_id, issued_book_name, issued_book_isbn, issued_date 
-FROM issued_status;
-
-✔ Branch contact & address details
-SELECT branch_id, branch_address, contact_no, manager_id 
-FROM branch;
-
-✔ Count of books per category
-SELECT category, COUNT(*) AS books_count
-FROM books
-GROUP BY category
-ORDER BY books_count DESC;
-
-✔ Last 10 returned books
-SELECT *
+✔ Recently returned books
+SELECT return_id, return_book_name, return_date
 FROM return_status
 ORDER BY return_date DESC
 LIMIT 10;
 
-B. Intermediate SQL Queries
+🟨 5. Intermediate SQL Queries
 
-✔ Books issued per member
+These queries involve joins and aggregated insights.
+
+✔ Total books issued by each member
 SELECT m.member_id, m.member_name, COUNT(i.issued_id) AS total_issues
 FROM members m
 LEFT JOIN issued_status i ON m.member_id = i.issued_member_id
 GROUP BY m.member_id, m.member_name;
-
-✔ Books issued by each employee
-SELECT e.emp_id, e.emp_name, COUNT(i.issued_id) AS books_processed
-FROM employees e
-LEFT JOIN issued_status i ON e.emp_id = i.issued_emp_id
-GROUP BY e.emp_id, e.emp_name;
 
 ✔ Top 5 most issued books
 SELECT b.book_title, COUNT(i.issued_id) AS issue_count
@@ -181,27 +192,21 @@ GROUP BY b.book_title
 ORDER BY issue_count DESC
 LIMIT 5;
 
+✔ Categories with average rental price above ₹200
+SELECT category, AVG(rental_price) AS avg_price
+FROM books
+GROUP BY category
+HAVING AVG(rental_price) > 200;
+
 ✔ Total rental revenue by category
 SELECT b.category, SUM(b.rental_price) AS total_revenue
 FROM issued_status i
 JOIN books b ON i.issued_book_isbn = b.isbn
 GROUP BY b.category;
 
-✔ Count returned books per month
-SELECT DATE_FORMAT(return_date, '%Y-%m') AS month, COUNT(*) AS returns_count
-FROM return_status
-GROUP BY month
-ORDER BY month DESC;
+🟥 6. Advanced SQL Queries
 
-✔ Top 3 authors based on issues
-SELECT b.author, COUNT(i.issued_id) AS total_issues
-FROM books b
-JOIN issued_status i ON b.isbn = i.issued_book_isbn
-GROUP BY b.author
-ORDER BY total_issues DESC
-LIMIT 3;
-
-C. Advanced SQL Queries
+These are deep analytical queries using window functions, ranking, and trend analysis.
 
 ✔ Top 3 members by total rental spending
 SELECT *
@@ -215,21 +220,7 @@ FROM (
 ) x
 WHERE rnk <= 3;
 
-✔ Books issued more times than average
-SELECT b.book_title, COUNT(i.issued_id) AS issue_count
-FROM books b
-JOIN issued_status i ON b.isbn = i.issued_book_isbn
-GROUP BY b.book_title
-HAVING COUNT(i.issued_id) > (
-    SELECT AVG(issue_count)
-    FROM (
-        SELECT COUNT(*) AS issue_count
-        FROM issued_status
-        GROUP BY issued_book_isbn
-    ) sub
-);
-
-✔ Monthly revenue trend for last 6 months
+✔ Monthly revenue trend (last 6 months)
 WITH last6 AS (
     SELECT DATE_FORMAT(issued_date, '%Y-%m') AS month,
            SUM(b.rental_price) AS revenue
@@ -240,11 +231,11 @@ WITH last6 AS (
 )
 SELECT * FROM last6 ORDER BY month;
 
-✔ Slow-moving books (not issued in last 1 year)
+✔ Detect slow-moving books
 SELECT b.isbn, b.book_title
 FROM books b
 LEFT JOIN issued_status i 
-    ON b.isbn = i.issued_book_isbn 
+    ON b.isbn = i.issued_book_isbn
     AND i.issued_date >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)
 WHERE i.issued_id IS NULL;
 
@@ -257,16 +248,7 @@ JOIN issued_status i ON e.emp_id = i.issued_emp_id
 JOIN books b ON i.issued_book_isbn = b.isbn
 GROUP BY br.branch_id, br.branch_address;
 
-✔ Fastest returning members
-SELECT m.member_id, m.member_name,
-       AVG(DATEDIFF(r.return_date, i.issued_date)) AS avg_return_days
-FROM members m
-JOIN issued_status i ON m.member_id = i.issued_member_id
-JOIN return_status r ON i.issued_id = r.issued_id
-GROUP BY m.member_id, m.member_name
-ORDER BY avg_return_days;
-
-✔ Employees handling 20%+ of total issues
+✔ Employees handling 20%+ of all issues
 WITH emp_issues AS (
     SELECT e.emp_id, e.emp_name, COUNT(i.issued_id) AS total_issues
     FROM employees e
@@ -280,15 +262,28 @@ SELECT ei.emp_id, ei.emp_name, ei.total_issues,
 FROM emp_issues ei, total t
 WHERE ei.total_issues >= 0.20 * t.library_total;
 
-✔ Members who issued another book within 7 days after returning one
-SELECT DISTINCT m.member_id, m.member_name
-FROM members m
-JOIN issued_status i1 ON m.member_id = i1.issued_member_id
-JOIN return_status r ON i1.issued_id = r.issued_id
-JOIN issued_status i2 ON m.member_id = i2.issued_member_id
-WHERE i2.issued_date > r.return_date
-  AND DATEDIFF(i2.issued_date, r.return_date) <= 7;
+🎯 Purpose of These Queries
+
+These SQL scripts help achieve:
+
+Understanding real-world relational schemas
+
+Practicing joins, aggregations, and window functions
+
+Analyzing library operations and performance
+
+Generating insights such as:
+
+Most issued books
+
+Fastest returners
+
+Branch revenue rankings
+
+Employee performance
+
+Category-level rentability
 
 📜 License
 
-Use these SQL scripts for learning, teaching, or data analysis projects.
+These SQL scripts may be used for learning, teaching, academic projects, or data analysis practice.
