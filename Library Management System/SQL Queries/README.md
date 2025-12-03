@@ -1,30 +1,44 @@
 This directory contains all SQL scripts used for creating the Library Management System database, generating tables, establishing relationships, and running analytical SQL queries ranging from basic to advanced levels.
+
 These queries help perform real-world data analysis on books, members, employees, branches, issues, returns, and library revenue.
 
 📂 Contents
+
 •	Database Creation Script
+
 •	Table Creation Queries
+
 •	Sample Data Checks
+
 •	Basic SQL Queries
+
 •	Intermediate SQL Queries
+
 •	Advanced SQL Queries
 
 🛠️ 1. Database Creation
+
 CREATE DATABASE library_db;
+
 USE library_db;
 
 🧱 2. Table Schema
+
 This script creates six core tables used throughout the system:
 
 1. Branch Table
+
 Stores library branch information.
+
 CREATE TABLE branch (
     branch_id VARCHAR(10) PRIMARY KEY,
     manager_id VARCHAR(10),
     branch_address VARCHAR(30),
     contact_no VARCHAR(15)
 );
+
 2. Employees Table
+
 Stores employee details and their branch assignments.
 
 CREATE TABLE employees (
@@ -35,16 +49,22 @@ CREATE TABLE employees (
     branch_id VARCHAR(10),
     FOREIGN KEY (branch_id) REFERENCES branch(branch_id)
 );
+
 3. Members Table
+
 Stores registered library members.
+
 CREATE TABLE members (
     member_id VARCHAR(10) PRIMARY KEY,
     member_name VARCHAR(30),
     member_address VARCHAR(30),
     reg_date DATE
 );
+
 4. Books Table
+
 Stores all book metadata.
+
 CREATE TABLE books (
     isbn VARCHAR(50) PRIMARY KEY,
     book_title VARCHAR(80),
@@ -54,8 +74,11 @@ CREATE TABLE books (
     author VARCHAR(30),
     publisher VARCHAR(30)
 );
+
 5. Issued Status Table
+
 Tracks books issued to members.
+
 CREATE TABLE issued_status (
     issued_id VARCHAR(10) PRIMARY KEY,
     issued_member_id VARCHAR(30),
@@ -67,8 +90,11 @@ CREATE TABLE issued_status (
     FOREIGN KEY (issued_emp_id) REFERENCES employees(emp_id),
     FOREIGN KEY (issued_book_isbn) REFERENCES books(isbn)
 );
+
 6. Return Status Table
+
 Tracks book returns.
+
 CREATE TABLE return_status (
     return_id VARCHAR(10) PRIMARY KEY,
     issued_id VARCHAR(30),
@@ -79,12 +105,19 @@ CREATE TABLE return_status (
 );
 
 🔍 3. Data Validation Queries
+
 These queries ensure all tables are loaded and functioning correctly:
+
 SELECT * FROM books;
+
 SELECT * FROM branch;
+
 SELECT * FROM employees;
+
 SELECT * FROM issued_status;
+
 SELECT * FROM return_status;
+
 SELECT * FROM members;
 
 A. Basic SQL Queries
