@@ -1,5 +1,7 @@
 🎵 Spotify Data Analysis Using SQL
+
 Real-World MySQL Analytics Project
+
 This project explores a comprehensive Spotify music dataset using SQL to uncover patterns in song attributes, artist performance, genres, popularity trends, and listener behavior. 
 
 It demonstrates practical data analytics skills, including querying, aggregations, time-based insights, and exploratory analysis—all essential for data analyst and BI roles.
