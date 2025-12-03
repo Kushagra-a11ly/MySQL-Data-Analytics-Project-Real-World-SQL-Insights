@@ -1,5 +1,5 @@
 This directory contains all SQL scripts used for creating the Library Management System database, generating tables, establishing relationships, and running analytical SQL queries ranging from basic to advanced levels.
-
+ 
 These queries help perform real-world data analysis on books, members, employees, branches, issues, returns, and library revenue.
 
 📂 Contents
