@@ -1,0 +1,38 @@
+-- BASIC LEVEL QUESTIONS
+
+1.	Find tracks with more than 1 billion streams.
+2.	List albums with their respective artists.
+3.	Calculate the total number of comments where the track is licensed.
+4.	List all tracks that belong to the album type “single.”
+5.	Count the total number of tracks created by each artist.
+6.	Identify tracks that have a duration of more than 5 minutes.
+7.	List tracks that have more than 1 million views.
+8.	Display all unique album types present in the dataset.
+9.	Identify artists whose tracks have more than 1 million likes.
+10.	Find tracks that have zero views or zero streams.
+
+-- INTERMEDIATE LEVEL QUESTIONS
+
+1.	Find the average danceability for each album.
+2.	List the top 5 tracks with the highest energy values.
+3.	Display tracks that have an official music video.
+4.	Calculate total views for each album.
+5.	Find tracks where streams are greater than views.
+6.	Identify tracks with high valence (greater than 0.75) sorted by likes.
+7.	Compute the average loudness for each artist.
+8.	List tracks whose duration is above the average duration of all tracks.
+9.	Find the most viewed track for each album.
+10.	Identify albums that contain more than 10 tracks.
+   
+-- ADVANCED LEVEL QUESTIONS
+
+1.	List the top 3 most-viewed tracks for each artist.
+2.	Identify tracks where liveness is above the dataset’s average liveness.
+3.	Calculate the energy difference (max − min) for each album.
+4.	Generate a running total of streams for each artist.
+5.	Identify tracks that fall within the top 10% based on views.
+6.	List artists whose average energy is above the overall average energy.
+7.	Find tracks that have both high danceability and high valence (over 0.7 each).
+8.	Find the latest track released per channel using the “most_playedon” field.
+9.	Identify the top 5% of albums based on total accumulated views.
+10.	Find tracks that fall within ±5 BPM of the artist’s average tempo.
