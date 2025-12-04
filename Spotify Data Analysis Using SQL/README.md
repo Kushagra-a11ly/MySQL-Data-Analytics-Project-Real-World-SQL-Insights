@@ -1,3 +1,6 @@
+![image alt](https://github.com/Kushagra-a11ly/MySQL-Data-Analytics-Project-Real-World-SQL-Insights/blob/64ad28d3facb758ba6c935ea5663b5a68b7a4849/Spotify%20Data%20Analysis%20Using%20SQL/dataset-cover.jpg)
+
+
 🎵 Spotify Data Analysis Using SQL
 
 Real-World MySQL Analytics Project
