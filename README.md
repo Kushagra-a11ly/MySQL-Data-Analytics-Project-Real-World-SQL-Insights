@@ -2,204 +2,132 @@
 
 📚 SQL Projects Portfolio — Real-World Data Analytics with MySQL
 
-This repository is a comprehensive collection of professional SQL projects crafted to reflect the type of analytical work performed inside data-driven organizations.
-
-Every project is designed to demonstrate strong command over SQL, thoughtful business reasoning, and the ability to extract meaningful insights from raw data using MySQL.
-
-Instead of just practicing queries, this portfolio shows how SQL becomes a decision-making engine—from building datasets to generating KPIs to solving real business problems across domains like retail, HR, finance, logistics, and customer analytics.
-
-Whether you are preparing for a role or showcasing your capabilities, this repository reflects industry-ready SQL expertise.
+1.	This repository is a comprehensive collection of professional SQL projects crafted to reflect the type of analytical work performed inside data-driven organizations.
+2.	Every project is designed to demonstrate strong command over SQL, thoughtful business reasoning, and the ability to extract meaningful insights from raw data using MySQL.
+3.	Instead of just practicing queries, this portfolio shows how SQL becomes a decision-making engine—from building datasets to generating KPIs to solving real business problems across       domains like retail, HR, finance, logistics, and customer analytics.
+4.	Whether you are preparing for a role or showcasing your capabilities, this repository reflects industry-ready SQL expertise.
 
 🧠 Skills Demonstrated Across Projects
 
 This portfolio covers a full range of SQL abilities that recruiters look for in Data Analysts, BI Analysts, and Data Engineers:
+ 
+1. Relational Database Design
+1.	Designing normalized tables
+2.	Defining keys & constraints
+3.	Managing efficient data structures
+4.	Understanding schema relationships
 
-🔹 1. Relational Database Design
+2. Data Cleaning with SQL
+1.	Handling missing, inconsistent, and duplicate data
+2.	Applying CASE statements to fix inconsistencies
+3.	Standardizing date, text, and categorical fields
 
-•	Designing normalized tables
+3. Analytical SQL
+1.	Writing multi-stage pipelines using CTEs
+2.	Building views for reusable logic
+3.	Working with multiple datasets using joins
+4.	Solving business questions through optimized queries
 
-•	Defining keys & constraints
+4. Window Functions & Ranking
+1.	RANK(), DENSE_RANK(), NTILE()
+2.	LAG(), LEAD() for trend detection
+3.	Running totals, moving averages
+4.	Performance benchmarking
 
-•	Managing efficient data structures
+5. Aggregations & Business Segmentation
+1.	Revenue breakdowns
+2.	Customer segmentation
+3.	Product profitability analysis
+4.	Region/category-based metrics
 
-•	Understanding schema relationships
 
-🔹 2. Data Cleaning with SQL
+6. Query Optimization Techniques
+1.	Using EXPLAIN plans
+2.	Index-aware query writing
+3.	Efficient join strategies
+4.	Eliminating unnecessary subqueries
 
-•	Handling missing, inconsistent, and duplicate data
-
-•	Applying CASE statements to fix inconsistencies
-
-•	Standardizing date, text, and categorical fields
-
-🔹 3. Analytical SQL
-
-•	Writing multi-stage pipelines using CTEs
-
-•	Building views for reusable logic
-
-•	Working with multiple datasets using joins
-
-•	Solving business questions through optimized queries
-
-🔹 4. Window Functions & Ranking
-
-•	RANK(), DENSE_RANK(), NTILE()
-
-•	LAG(), LEAD() for trend detection
-
-•	Running totals, moving averages
-
-•	Performance benchmarking
-
-🔹 5. Aggregations & Business Segmentation
-
-•	Revenue breakdowns
-
-•	Customer segmentation
-
-•	Product profitability analysis
-
-•	Region/category-based metrics
-
-🔹 6. Query Optimization Techniques
-
-•	Using EXPLAIN plans
-
-•	Index-aware query writing
-
-•	Efficient join strategies
-
-•	Eliminating unnecessary subqueries
-
-🔹 7. Real-World Business Insight Extraction
-
-•	Identifying trends and behavior patterns
-
-•	Calculating KPIs for executives
-
-•	Supporting decisions with data-backed analysis
+7. Real-World Business Insight Extraction
+1.	Identifying trends and behavior patterns
+2.	Calculating KPIs for executives
+3.	Supporting decisions with data-backed analysis
 
 📌 Technologies Used
 
 This repository is built using industry-standard tools:
-
-•	MySQL – Core database engine for all queries
-
-•	MySQL Workbench / CLI – Query execution & schema management
-
-•	CSV / Excel Datasets – Source data for all projects
-
-•	(Optional) Power BI / Tableau – Dashboard extensions for visual insights
-
+1.	MySQL – Core database engine for all queries
+2.	MySQL Workbench / CLI – Query execution & schema management
+3.	CSV / Excel Datasets – Source data for all projects
+4.	(Optional) Power BI / Tableau – Dashboard extensions for visual insights
 The project structure ensures that each SQL solution can be easily transferred to other SQL engines like PostgreSQL, SQL Server, Oracle, and BigQuery.
 
 📈 Who This Repository Helps
-
 This repository is intentionally crafted to serve multiple audiences:
 
 ✔ Recruiters & Hiring Managers
-
 Evaluate SQL capability quickly through:
-
-•	Clean documentation
-
-•	Project tiering (Beginner → Intermediate → Advanced)
-
-•	Real-world analytical logic
+1.	Clean documentation
+2.	Project tiering (Beginner → Intermediate → Advanced)
+3.	Real-world analytical logic
 
 ✔ Data Analyst Aspirants
-
 Get hands-on practice with:
-
-•	End-to-end SQL case studies
-
-•	Business-focused problem solving
-
-•	Real datasets and industry-style queries
+1.	End-to-end SQL case studies
+2.	Business-focused problem solving
+3.	Real datasets and industry-style queries
 
 ✔ Students & Learners
-
-Learn SQL progressively through structured projects that increase in complexity.
+1.	Learn SQL progressively through structured projects that increase in complexity.
 
 ✔ Companies & Professionals
-
 Use the projects as templates for:
-
-•	KPI reporting
-
-•	Sales & customer analysis
-
-•	Operational dashboards
+2.	KPI reporting
+3.	Sales & customer analysis
+4.	Operational dashboards
 
 🔥 Why This Repository Stands Out
-
-This is not just another SQL cheat-sheet.
-
-It is a complete analytics portfolio designed to match real business scenarios.
-
+1.This is not just another SQL cheat-sheet.
+2.It is a complete analytics portfolio designed to match real business scenarios.
 Here’s what sets it apart:
 
 ⭐ 1. Clear Project Tiering
-
-Projects are categorized into Beginner, Intermediate, and Advanced levels so recruiters can instantly gauge skill progression.
+1.	Projects are categorized into Beginner, Intermediate, and Advanced levels so recruiters can instantly gauge skill progression.
 
 ⭐ 2. Professional Folder Structure
-
 Each project is organized with:
-
-•	Dataset
-
-•	SQL scripts
-
-•	Insights summary
-
-•	Documentation
-
+1.	Dataset
+2.	SQL scripts
+3.	Insights summary
+4.	Documentation
 This mirrors how analytics teams structure deliverables.
 
 ⭐ 3. Real-World Datasets
-
-Every project uses meaningful data that mimics actual business environments—retail orders, HR info, financial transactions, customer behavior, and more.
+1.Every project uses meaningful data that mimics actual business environments—retail orders, HR info, financial transactions, customer behavior, and more.
 
 ⭐ 4. Business-Focused Insight Generation
-
 Not just queries — but interpretation.
-
 Each project includes:
-
-•	KPIs
-
-•	Insights
-
-•	Observations
-
-•	Recommendations
+1.	KPIs
+2.	Insights
+3.	Observations
+4.	Recommendations
 
 ⭐ 5. Clean, Modular SQL Code
-
 Readable, scalable SQL that reflects industry standards:
-
-•	CTE-first architecture
-
-•	Proper aliasing
-
-•	Logical grouping
-
-•	Query modularity
+1.	CTE-first architecture
+2.	Proper aliasing
+3.	Logical grouping
+4.	Query modularity
 
 ⭐ 6. Executive-Level Documentation
-
 Each project includes:
-
-•	A clear problem statement
-
-•	Approach breakdown
-
-•	Final insights
-
+1.	A clear problem statement
+2.	Approach breakdown
+3.	Final insights
 This is exactly what recruiters want to see in a portfolio.
 
 👤 Author
+
 Kushagra Mukund Dhamani
-AI & Data Science | SQL | Python | Power BI
+AI & Data Science | SQL | Python | Excel | Power BI
+
