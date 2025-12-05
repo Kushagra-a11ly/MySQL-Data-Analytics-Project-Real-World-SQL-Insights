@@ -81,10 +81,12 @@ Get hands-on practice with:
 1.	Learn SQL progressively through structured projects that increase in complexity.
 
 ✔ Companies & Professionals
+
 Use the projects as templates for:
-2.	KPI reporting
-3.	Sales & customer analysis
-4.	Operational dashboards
+
+1.	KPI reporting
+2.	Sales & customer analysis
+3.	Operational dashboards
 
 🔥 Why This Repository Stands Out
 1.This is not just another SQL cheat-sheet.
