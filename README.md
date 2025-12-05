@@ -77,6 +77,7 @@ Get hands-on practice with:
 3.	Real datasets and industry-style queries
 
 ✔ Students & Learners
+
 1.	Learn SQL progressively through structured projects that increase in complexity.
 
 ✔ Companies & Professionals
