@@ -40,7 +40,6 @@ This portfolio covers a full range of SQL abilities that recruiters look for in 
 3.	Product profitability analysis
 4.	Region/category-based metrics
 
-
 6. Query Optimization Techniques
 1.	Using EXPLAIN plans
 2.	Index-aware query writing
@@ -62,6 +61,7 @@ This repository is built using industry-standard tools:
 The project structure ensures that each SQL solution can be easily transferred to other SQL engines like PostgreSQL, SQL Server, Oracle, and BigQuery.
 
 📈 Who This Repository Helps
+
 This repository is intentionally crafted to serve multiple audiences:
 
 ✔ Recruiters & Hiring Managers
