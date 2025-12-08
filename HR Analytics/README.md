@@ -6,6 +6,7 @@ HR Analytics SQL Project
 📁 Dataset Overview
 
 Table: hr_analytics
+
 Column Name	Data Type
 
 1.EmpID -->	TEXT
@@ -50,7 +51,9 @@ Column Name	Data Type
 🧠 Topics Covered
 
 🔹 BASIC SQL TOPICS
+
 These topics form the foundation of SQL and are used in simple data retrieval and filtering.
+
 1. Data Retrieval
 a. SELECT
 b. DISTINCT
