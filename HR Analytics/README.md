@@ -5,8 +5,6 @@ HR Analytics SQL Project
 
 📁 Dataset Overview
 
-T📁 Dataset Overview
-
 Table: hr_analytics
 Column Name	Data Type
 
@@ -102,8 +100,8 @@ b. REPLACE VIEW
 c. DROP VIEW
 
 6. Constraints & Keys
-a. PRIMARY KEY
-b. FOREIGN KEY
-c. UNIQUE
-d. CHECK
-e. Self-Joins
+  a. PRIMARY KEY
+  b. FOREIGN KEY
+  c. UNIQUE
+  d. CHECK
+  e. Self-Joins
