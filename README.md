@@ -4,6 +4,8 @@
 
 <div align="center">
 
+<div align="center">
+
 # SQL Projects Portfolio
 ### Real-World Data Analytics · MySQL · Business Intelligence
 
@@ -71,9 +73,12 @@ Domains covered include **retail, HR, finance, logistics, and customer analytics
 </table>
 
 ---
-📐 Project Structure
+
+## 📐 Project Structure
 
 Every project in this repository follows the same professional workflow — mirroring how analytics teams structure and deliver work:
+
+```
 project-name/
 │
 ├── dataset/              # Raw source data (CSV / Excel)
@@ -84,7 +89,6 @@ project-name/
 ├── insights/
 │   └── summary.md        # Findings, observations & recommendations
 └── README.md             # Problem statement & approach
-
 ```
 
 ---
@@ -152,6 +156,7 @@ This is what separates a portfolio from a practice repo.
 AI & Data Science · SQL · Python · Excel · Power BI
 
 [![GitHub](https://img.shields.io/badge/GitHub-Kushagra--a11ly-181717?style=flat-square&logo=github)](https://github.com/Kushagra-a11ly)
+![Profile Views](https://komarev.com/ghpvc/?username=Kushagra-a11ly&style=flat-square)
 
 ---
 
