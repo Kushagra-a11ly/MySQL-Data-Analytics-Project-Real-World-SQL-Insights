@@ -13,9 +13,6 @@
 
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
 <br>
 
@@ -144,7 +141,6 @@ AI & Data Science &nbsp;·&nbsp; SQL &nbsp;·&nbsp; Python &nbsp;·&nbsp; Excel 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Kushagra--a11ly-181717?style=for-the-badge&logo=github)](https://github.com/Kushagra-a11ly)
 &nbsp;
-![Profile Views](https://komarev.com/ghpvc/?username=Kushagra-a11ly&style=for-the-badge)
 
 <br>
 
