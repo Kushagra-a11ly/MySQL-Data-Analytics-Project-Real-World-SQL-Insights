@@ -2,14 +2,14 @@
 
 <div align="center">
 
+<div align="center">
+
 # SQL Projects Portfolio
-### MySQL 
+### Real-World Data Analytics · MySQL · Business Intelligence
 
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
-![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
+
 
 > *SQL is not just a query language. In the right hands, it becomes a decision-making engine.*
 
@@ -154,11 +154,9 @@ This is what separates a portfolio from a practice repo.
 AI & Data Science · SQL · Python · Excel · Power BI
 
 [![GitHub](https://img.shields.io/badge/GitHub-Kushagra--a11ly-181717?style=flat-square&logo=github)](https://github.com/Kushagra-a11ly)
-![Profile Views](https://komarev.com/ghpvc/?username=Kushagra-a11ly&style=flat-square)
 
 ---
 
 <div align="center">
 <sub>Built to reflect industry standards · Designed to be read by humans, not just machines</sub>
 </div>
-
