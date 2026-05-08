@@ -3,7 +3,7 @@
 <div align="center">
 
 # SQL Projects Portfolio
-### Real-World Data Analytics · MySQL · Business Intelligence
+### MySQL 
 
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
