@@ -71,12 +71,9 @@ Domains covered include **retail, HR, finance, logistics, and customer analytics
 </table>
 
 ---
-
-## 📐 Project Structure
+📐 Project Structure
 
 Every project in this repository follows the same professional workflow — mirroring how analytics teams structure and deliver work:
-
-```
 project-name/
 │
 ├── dataset/              # Raw source data (CSV / Excel)
@@ -87,6 +84,7 @@ project-name/
 ├── insights/
 │   └── summary.md        # Findings, observations & recommendations
 └── README.md             # Problem statement & approach
+
 ```
 
 ---
