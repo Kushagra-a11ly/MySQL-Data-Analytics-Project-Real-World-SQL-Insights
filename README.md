@@ -125,7 +125,6 @@ Every project delivers five things:
 | 4 | **Extracted KPIs** | Not just results — metrics a stakeholder can act on |
 | 5 | **Insight Summary** | Observations, patterns, and data-backed recommendations |
 
-> This is what separates a portfolio from a practice repo.
 
 ---
 
