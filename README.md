@@ -1,136 +1,164 @@
 ![image alt](https://github.com/Kushagra-a11ly/MySQL-Data-Analytics-Project-Real-World-SQL-Insights/blob/09e814ba9d6c63e86f1c0cd974fd8aba3b17db4f/Profile%20Picture.png)
 
-📚 SQL Projects Portfolio — Real-World Data Analytics with MySQL
+<div align="center">
 
-1.	This repository is a comprehensive collection of professional SQL projects crafted to reflect the type of analytical work performed inside data-driven organizations.
-2.	Every project is designed to demonstrate strong command over SQL, thoughtful business reasoning, and the ability to extract meaningful insights from raw data using MySQL.
-3.	Instead of just practicing queries, this portfolio shows how SQL becomes a decision-making engine—from building datasets to generating KPIs to solving real business problems across       domains like retail, HR, finance, logistics, and customer analytics.
-4.	Whether you are preparing for a role or showcasing your capabilities, this repository reflects industry-ready SQL expertise.
+# SQL Projects Portfolio
+### Real-World Data Analytics · MySQL · Business Intelligence
 
-🧠 Skills Demonstrated Across Projects
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 
-This portfolio covers a full range of SQL abilities that recruiters look for in Data Analysts, BI Analysts, and Data Engineers:
- 
-1. Relational Database Design
-1.	Designing normalized tables
-2.	Defining keys & constraints
-3.	Managing efficient data structures
-4.	Understanding schema relationships
+> *SQL is not just a query language. In the right hands, it becomes a decision-making engine.*
 
-2. Data Cleaning with SQL
-1.	Handling missing, inconsistent, and duplicate data
-2.	Applying CASE statements to fix inconsistencies
-3.	Standardizing date, text, and categorical fields
+</div>
 
-3. Analytical SQL
-1.	Writing multi-stage pipelines using CTEs
-2.	Building views for reusable logic
-3.	Working with multiple datasets using joins
-4.	Solving business questions through optimized queries
+---
 
-4. Window Functions & Ranking
-1.	RANK(), DENSE_RANK(), NTILE()
-2.	LAG(), LEAD() for trend detection
-3.	Running totals, moving averages
-4.	Performance benchmarking
+## 🗂 What This Repository Is
 
-5. Aggregations & Business Segmentation
-1.	Revenue breakdowns
-2.	Customer segmentation
-3.	Product profitability analysis
-4.	Region/category-based metrics
+This is not a collection of syntax exercises or cheat-sheets.
 
-6. Query Optimization Techniques
-1.	Using EXPLAIN plans
-2.	Index-aware query writing
-3.	Efficient join strategies
-4.	Eliminating unnecessary subqueries
+It is a **professional SQL analytics portfolio** — built to reflect the kind of work that happens inside data-driven organisations every day. Each project is rooted in a real business problem, solved with clean and structured SQL, and documented the way an analyst would present findings to stakeholders.
 
-7. Real-World Business Insight Extraction
-1.	Identifying trends and behavior patterns
-2.	Calculating KPIs for executives
-3.	Supporting decisions with data-backed analysis
+Domains covered include **retail, HR, finance, logistics, and customer analytics** — giving breadth across the scenarios that appear most in industry roles.
 
-📌 Technologies Used
+---
 
-This repository is built using industry-standard tools:
-1.	MySQL – Core database engine for all queries
-2.	MySQL Workbench / CLI – Query execution & schema management
-3.	CSV / Excel Datasets – Source data for all projects
-4.	(Optional) Power BI / Tableau – Dashboard extensions for visual insights
-The project structure ensures that each SQL solution can be easily transferred to other SQL engines like PostgreSQL, SQL Server, Oracle, and BigQuery.
+## 🧠 Skills Demonstrated
 
-📈 Who This Repository Helps
+<table>
+<tr>
+<td valign="top" width="50%">
 
-This repository is intentionally crafted to serve multiple audiences:
+**Database Design**
+- Normalised table architecture
+- Primary & foreign key constraints
+- Schema relationships & efficient structures
 
-✔ Recruiters & Hiring Managers
-Evaluate SQL capability quickly through:
-1.	Clean documentation
-2.	Project tiering (Beginner → Intermediate → Advanced)
-3.	Real-world analytical logic
+**Data Cleaning**
+- Handling nulls, duplicates, and inconsistencies
+- `CASE`-based standardisation
+- Formatting dates, text, and categorical fields
 
-✔ Data Analyst Aspirants
-Get hands-on practice with:
-1.	End-to-end SQL case studies
-2.	Business-focused problem solving
-3.	Real datasets and industry-style queries
+**Analytical SQL**
+- Multi-stage pipelines via CTEs
+- Reusable logic with views
+- Complex joins across multiple datasets
 
-✔ Students & Learners
+</td>
+<td valign="top" width="50%">
 
-1.	Learn SQL progressively through structured projects that increase in complexity.
+**Window Functions**
+- `RANK()`, `DENSE_RANK()`, `NTILE()`
+- `LAG()` / `LEAD()` for trend detection
+- Running totals and moving averages
 
-✔ Companies & Professionals
+**Business Segmentation**
+- Revenue breakdowns by region and category
+- Customer segmentation and cohort logic
+- Product profitability analysis
 
-Use the projects as templates for:
+**Query Optimisation**
+- `EXPLAIN` plan analysis
+- Index-aware query writing
+- Eliminating redundant subqueries
 
-1.	KPI reporting
-2.	Sales & customer analysis
-3.	Operational dashboards
+</td>
+</tr>
+</table>
 
-🔥 Why This Repository Stands Out
-1.This is not just another SQL cheat-sheet.
-2.It is a complete analytics portfolio designed to match real business scenarios.
-Here’s what sets it apart:
+---
 
-⭐ 1. Clear Project Tiering
-1.	Projects are categorized into Beginner, Intermediate, and Advanced levels so recruiters can instantly gauge skill progression.
+## 📐 Project Structure
 
-⭐ 2. Professional Folder Structure
-Each project is organized with:
-1.	Dataset
-2.	SQL scripts
-3.	Insights summary
-4.	Documentation
-This mirrors how analytics teams structure deliverables.
+Every project in this repository follows the same professional workflow — mirroring how analytics teams structure and deliver work:
 
-⭐ 3. Real-World Datasets
-1.Every project uses meaningful data that mimics actual business environments—retail orders, HR info, financial transactions, customer behavior, and more.
+```
+project-name/
+│
+├── dataset/              # Raw source data (CSV / Excel)
+├── scripts/
+│   ├── 01_cleaning.sql   # Data preparation & standardisation
+│   ├── 02_analysis.sql   # Core analytical queries
+│   └── 03_insights.sql   # KPI extraction & final outputs
+├── insights/
+│   └── summary.md        # Findings, observations & recommendations
+└── README.md             # Problem statement & approach
+```
 
-⭐ 4. Business-Focused Insight Generation
-Not just queries — but interpretation.
-Each project includes:
-1.	KPIs
-2.	Insights
-3.	Observations
-4.	Recommendations
+---
 
-⭐ 5. Clean, Modular SQL Code
-Readable, scalable SQL that reflects industry standards:
-1.	CTE-first architecture
-2.	Proper aliasing
-3.	Logical grouping
-4.	Query modularity
+## 📊 Project Tiers
 
-⭐ 6. Executive-Level Documentation
-Each project includes:
-1.	A clear problem statement
-2.	Approach breakdown
-3.	Final insights
-This is exactly what recruiters want to see in a portfolio.
+Projects are organised into three levels so you can navigate by complexity:
 
-👤 Author
+| Tier | Focus | Examples |
+|------|-------|---------|
+| 🟢 **Beginner** | Aggregations, filters, basic joins | Sales summary, employee directory |
+| 🟡 **Intermediate** | CTEs, window functions, segmentation | Customer RFM, product performance |
+| 🔴 **Advanced** | Multi-table pipelines, KPI frameworks, optimisation | Churn analysis, revenue attribution |
 
-Kushagra Mukund Dhamani
-AI & Data Science | SQL | Python | Excel | Power BI
+---
+
+## 🛠 Tech Stack
+
+| Tool | Role |
+|------|------|
+| ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white) **MySQL** | Core engine for all queries and schema design |
+| **MySQL Workbench / CLI** | Query execution and schema management |
+| ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) **CSV / Excel** | Source datasets for all projects |
+| ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) **Power BI / Tableau** | Optional dashboard extensions for visual delivery |
+
+> All SQL written here is engine-agnostic by design — queries are transferable to **PostgreSQL, SQL Server, Oracle, and BigQuery** with minimal modification.
+
+---
+
+## 🎯 Who This Is For
+
+**Recruiters & Hiring Managers**
+→ Evaluate SQL depth through tiered projects, clean documentation, and real analytical logic — not just query syntax.
+
+**Data Analyst Aspirants**
+→ Study end-to-end case studies with business context, real datasets, and industry-style problem framing.
+
+**Students & Learners**
+→ Progress through structured complexity — from foundational aggregations to advanced window function pipelines.
+
+**Companies & Teams**
+→ Use projects as templates for KPI reporting, sales analysis, and operational dashboards.
+
+---
+
+## ⭐ What Makes This Different
+
+Most SQL portfolios stop at the query. This one goes further.
+
+Every project delivers five things:
+
+1. **A clear problem statement** — what business question is being answered and why it matters
+2. **Documented approach** — the reasoning behind schema design and query architecture
+3. **Clean, modular SQL** — CTE-first, properly aliased, logically grouped, and readable
+4. **Extracted KPIs** — not just results, but metrics a stakeholder can act on
+5. **Insight summary** — observations, patterns, and data-backed recommendations
+
+This is what separates a portfolio from a practice repo.
+
+---
+
+## 👤 Author
+
+**Kushagra Mukund Dhamani**
+AI & Data Science · SQL · Python · Excel · Power BI
+
+[![GitHub](https://img.shields.io/badge/GitHub-Kushagra--a11ly-181717?style=flat-square&logo=github)](https://github.com/Kushagra-a11ly)
+![Profile Views](https://komarev.com/ghpvc/?username=Kushagra-a11ly&style=flat-square)
+
+---
+
+<div align="center">
+<sub>Built to reflect industry standards · Designed to be read by humans, not just machines</sub>
+</div>
 
