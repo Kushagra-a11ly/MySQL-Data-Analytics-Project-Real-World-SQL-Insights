@@ -1,102 +1,224 @@
 ![image alt](https://github.com/Kushagra-a11ly/MySQL-Data-Analytics-Project-Real-World-SQL-Insights/blob/77195de5019ba41f39d56d5db28dcdbe3a6c64d0/Netflix%20Movies%20and%20TV%20Shows%20Data%20Analysis/logo.png)
 
 
-Netflix Movies & TV Shows — Data Analysis using MySQL
+# 🎬 Netflix Movies & TV Shows — Data Analysis using MySQL
 
-📘 Project Overview
+A comprehensive SQL-based analytical project exploring the Netflix Movies and TV Shows dataset to uncover trends in content strategy, genre distribution, geographic reach, and audience segmentation.
 
-1.This project delivers deep analytical insights from the popular Netflix Movies and TV Shows dataset using MySQL.
+---
 
-2.It focuses on exploring global streaming content trends, uncovering patterns in genres, release years, cast collaborations, ratings, and country-wise distribution.
+## 📘 Project Overview
 
-3.The goal is to demonstrate real-world SQL data analysis skills, showcasing the ability to convert raw datasets into business-ready insights.
+This project delivers deep analytical insights from the popular **Netflix Movies and TV Shows dataset** using **MySQL**. It focuses on exploring global streaming content trends, uncovering patterns in genres, release years, cast collaborations, ratings, and country-wise distribution.
 
-🎯 Objectives
+The goal is to demonstrate real-world SQL data analysis skills — showcasing the ability to convert a raw, semi-structured dataset into clear, business-ready insights using clean and efficient query design.
 
-1.Analyze the content library structure and trends
+---
 
-2.Explore genre and category distributions
+## 🎯 Objectives
 
-3.Study country-wise content production
+- Analyze the content library structure and trends
+- Explore genre and category distributions
+- Study country-wise content production
+- Examine director and cast collaboration patterns
+- Investigate ratings, durations, and release-year evolution
+- Create SQL-based insights comparable to industry analytics tasks
 
-4.Examine director and cast patterns
+---
 
-5.Investigate ratings, durations, and release-year evolution
+## 🗂 Dataset Description
 
-6.Create SQL-based insights similar to industry analytics tasks
+The dataset contains metadata for all movies and TV shows available on Netflix.
 
-🗂 Dataset Description
+| Column | Description |
+|---|---|
+| `show_id` | Unique identifier for each title |
+| `type` | Content type — Movie or TV Show |
+| `title` | Name of the content |
+| `director` | Director(s) of the content |
+| `cast` | Main actors featured |
+| `country` | Country of origin |
+| `date_added` | Date the content was added to Netflix |
+| `release_year` | Original year of release |
+| `rating` | Content rating (TV-MA, PG, TV-14, etc.) |
+| `duration` | Movie runtime (minutes) or number of seasons |
+| `listed_in` | Genre(s) / category tags |
+| `description` | Short summary of the content |
 
-This dataset contains all movies and TV shows available on Netflix, along with essential metadata.
+---
 
-Key Columns:
+## 🛠 Tech Stack
 
-1.show_id – Unique identifier
+- **Database:** MySQL 8.0+
+- **Tools:** MySQL Workbench / CLI
+- **Techniques:** Joins, CTEs, Window Functions, String Functions, Aggregations
 
-2.type – Movie or TV Show
+---
 
-3.title – Name of the content
+## 🧱 Table Schema
 
-4.director – Director(s)
+```sql
+CREATE TABLE netflix (
+    show_id      VARCHAR(10) PRIMARY KEY,
+    type         VARCHAR(10),
+    title        VARCHAR(255),
+    director     VARCHAR(255),
+    cast_members TEXT,
+    country      VARCHAR(255),
+    date_added   DATE,
+    release_year INT,
+    rating       VARCHAR(10),
+    duration     VARCHAR(20),
+    listed_in    VARCHAR(255),
+    description  TEXT
+);
+```
 
-5.cast – Main actors
+---
 
-6.country – Origin country
+## 🔍 What This Project Demonstrates
 
-7.date_added – When content was added to Netflix
+- Clean, professional MySQL query-writing
+- Complex filtering and aggregation logic
+- Pattern analysis and text parsing on multi-valued fields
+- Date-based trend discovery
+- Real-world analytics thinking
+- Industry-standard SQL exploration techniques
 
-8.release_year – Original release year
+---
 
-9.rating – Content rating (TV-MA, PG, etc.)
+## 🚀 Key Business Questions & Insights Answered
 
-10.duration – Movie duration or number of seasons
+1. Most dominant genres on Netflix
+2. Countries producing the maximum content
+3. Most frequent actor collaborations
+4. Rating distribution and audience segmentation
+5. Year-wise evolution of Movies vs. TV Shows
+6. Longest-running TV shows and longest movies
+7. Directors with the highest number of titles
+8. Keyword frequency patterns in content descriptions
 
-11.listed_in – Genre/categories
+---
 
-12.description – Summary of the content
+## 💡 Sample Queries
 
-🔍 What This Project Demonstrates
+**1. Count of Movies vs. TV Shows**
+```sql
+SELECT type, COUNT(*) AS total_titles
+FROM netflix
+GROUP BY type;
+```
 
-1.Clean, professional MySQL query-writing
+**2. Top 10 Countries by Content Volume**
+```sql
+SELECT TRIM(SUBSTRING_INDEX(country, ',', 1)) AS primary_country,
+       COUNT(*) AS total_titles
+FROM netflix
+WHERE country IS NOT NULL
+GROUP BY primary_country
+ORDER BY total_titles DESC
+LIMIT 10;
+```
 
-2.Complex filtering and aggregation
+**3. Most Common Genres**
+```sql
+SELECT TRIM(SUBSTRING_INDEX(SUBSTRING_INDEX(listed_in, ',', n.n), ',', -1)) AS genre,
+       COUNT(*) AS genre_count
+FROM netflix
+JOIN (SELECT 1 n UNION SELECT 2 UNION SELECT 3) n
+  ON CHAR_LENGTH(listed_in) - CHAR_LENGTH(REPLACE(listed_in, ',', '')) >= n.n - 1
+GROUP BY genre
+ORDER BY genre_count DESC
+LIMIT 10;
+```
 
-3.Pattern analysis and text parsing
+**4. Directors with Most Titles**
+```sql
+SELECT director, COUNT(*) AS total_titles
+FROM netflix
+WHERE director IS NOT NULL
+GROUP BY director
+ORDER BY total_titles DESC
+LIMIT 10;
+```
 
-4.Date-based trend discovery
+**5. Year-wise Trend of Movies vs. TV Shows Added**
+```sql
+SELECT YEAR(date_added) AS year_added, type, COUNT(*) AS total
+FROM netflix
+WHERE date_added IS NOT NULL
+GROUP BY year_added, type
+ORDER BY year_added;
+```
 
-5.Real-world analytics thinking
+**6. Longest Movies**
+```sql
+SELECT title, CAST(REPLACE(duration, ' min', '') AS UNSIGNED) AS duration_minutes
+FROM netflix
+WHERE type = 'Movie' AND duration LIKE '%min%'
+ORDER BY duration_minutes DESC
+LIMIT 10;
+```
 
-6.Industry-standard SQL exploration techniques
+**7. Rating-wise Content Distribution**
+```sql
+SELECT rating, COUNT(*) AS total_titles
+FROM netflix
+GROUP BY rating
+ORDER BY total_titles DESC;
+```
 
-🚀 Insights Answered
+**8. Most Frequent Actor Pairings**
+```sql
+-- Uses a self-join on a normalized cast table to find actors
+-- who most frequently appear together in the same title
+SELECT c1.actor AS actor_1, c2.actor AS actor_2, COUNT(*) AS collaborations
+FROM netflix_cast c1
+JOIN netflix_cast c2
+  ON c1.show_id = c2.show_id AND c1.actor < c2.actor
+GROUP BY actor_1, actor_2
+ORDER BY collaborations DESC
+LIMIT 10;
+```
 
-1.Most dominant genres on Netflix
+---
 
-2.Countries producing the maximum content
+## 🧩 Skills Demonstrated
 
-3.Most frequent actor collaborations
+- MySQL Querying
+- Data Cleaning with SQL
+- Exploratory Data Analysis (EDA)
+- Joins, Aggregations, and Window Functions
+- Text Analysis using String Functions
+- Trend and Pattern Discovery
 
-4.Rating distribution and audience segmentation
+---
 
-5.Year-wise evolution of movies vs TV shows
+## 📁 Project Structure
 
-6.Longest-running shows and longest movies
+```
+netflix-sql-analysis/
+│
+├── data/
+│   └── netflix_titles.csv
+│
+├── sql/
+│   ├── 01_schema_creation.sql
+│   ├── 02_data_cleaning.sql
+│   └── 03_analysis_queries.sql
+│
+└── README.md
+```
 
-7.Directors with the highest number of titles
+---
 
-8.Keyword frequency patterns in descriptions
+## ✅ Conclusion
 
-🧩 Skills Demonstrated
+This project illustrates how raw streaming metadata can be transformed into actionable insights using pure SQL — without external BI tools. It reflects practical, interview-ready analytical thinking applicable to real-world data analyst and business intelligence roles.
 
-1.MySQL Querying
+---
 
-2.Data Cleaning with SQL
+## 👤 Author
 
-3.Exploratory Data Analysis
-
-4.Joins, Aggregations, Window Functions
-
-5.Text Analysis using SQL functions
-
-6.Trend and pattern discovery
+**[Your Name]**
+Data Analyst | SQL Enthusiast
