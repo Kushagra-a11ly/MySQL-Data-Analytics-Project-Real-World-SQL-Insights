@@ -1,90 +1,72 @@
-🧾 Dataset Description
+# 🍕 Pizza Sales Analysis
 
-This project is built on a structured, relational dataset that represents real-world pizza store operations. The data is organized into four interconnected tables, enabling detailed analysis across orders, items, pricing, categories, and ingredients.
+---
 
-1. order_details.csv
+## 📘 Project Overview
 
-Contains line-item information for each order.
-Columns:
+This project is a complete **MySQL-based data analytics case study** built using a
+real-world pizza sales dataset. The goal is to explore restaurant sales performance,
+customer ordering patterns, product demand, and revenue metrics using clean,
+structured SQL queries.
 
-order_details_id – Unique identifier for each item entry
+The repository showcases practical SQL skills widely used in analytics roles —
+including data cleaning, joins, aggregations, window functions, performance analysis,
+and KPI derivation. All insights were generated using **MySQL 8**, ensuring modern
+SQL features and high-quality analytical reporting.
 
-order_id – Links to the orders table
+---
 
-pizza_id – Specifies the pizza ordered
+## 📁 Dataset Description
 
-quantity – Number of units purchased
+The dataset consists of **four CSV files** representing a realistic pizza store database:
 
-2. orders.csv
+### 1. `order_details.csv`
+Contains item-level details for each order.
 
-Stores the core order information, including timestamps.
-Columns:
+| Column | Description |
+|---|---|
+| `order_details_id` | Unique identifier for each order item |
+| `order_id` | Foreign key connecting to the orders table |
+| `pizza_id` | Identifies the specific pizza ordered |
+| `quantity` | Number of units ordered |
 
-order_id
+---
 
-date – Date of the transaction
+### 2. `orders.csv`
+Stores each order's timestamp information.
 
-time – Time of the transaction
+| Column | Description |
+|---|---|
+| `order_id` | Unique ID for each order |
+| `date` | Date the order was placed |
+| `time` | Time the order was placed |
 
-3. pizzas.csv
+---
 
-Defines pizza variations based on size and price.
-Columns:
+### 3. `pizza_types.csv`
+Contains pizza category and ingredient details.
 
-pizza_id – Unique pizza SKU
+| Column | Description |
+|---|---|
+| `pizza_type_id` | Unique identifier for each pizza type |
+| `name` | Name of the pizza |
+| `category` | Category (e.g., Veggie, Classic, Supreme) |
+| `ingredients` | Full ingredient list |
 
-pizza_type_id – Links to pizza types
+---
 
-size – S, M, L, XL, XXL
+### 4. `pizzas.csv`
+Links pizza type with size and pricing.
 
-price – Price of the specific pizza variant
+| Column | Description |
+|---|---|
+| `pizza_id` | Unique pizza identifier |
+| `pizza_type_id` | Foreign key connecting to the pizza types table |
+| `size` | Size of the pizza — S, M, L, XL, XXL |
+| `price` | Price of the pizza |
 
-4. pizza_types.csv
+---
 
-Describes high-level pizza characteristics.
-Columns:
+## 🧱 Database Structure Overview
 
-pizza_type_id
-
-name – Pizza name
-
-category – Category (Classic, Supreme, Veggie, etc.)
-
-ingredients – Complete ingredient list
-
-🎯 Objectives of This Project
-
-This project aims to deliver a complete SQL-based analytical workflow by exploring key business and operational questions. The objectives include:
-
-Analyzing total sales, revenue, and order volume
-
-Identifying best-selling pizzas, sizes, and categories
-
-Understanding peak ordering hours, days, and seasonal trends
-
-Analyzing ingredient-level patterns to understand customer preferences
-
-Providing menu optimization and promotional recommendations
-
-Strengthening MySQL analytical, modeling, and problem-solving skills
-
-🧠 SQL Skills Demonstrated
-
-This project showcases strong SQL competency through a diverse set of queries and analytical techniques, including:
-
-Complex JOIN operations across multiple tables
-
-GROUP BY aggregations for sales and performance metrics
-
-Window functions for ranking, running totals, and comparisons
-
-CTEs (Common Table Expressions) for clean, modular query design
-
-Date and time analysis for trend identification
-
-Ranking and performance evaluation of items and categories
-
-KPI generation, including revenue, order count, AOV, and item performance
-
-Answering real-world business questions through SQL-driven insights
-
+The database follows a **relational model** connected across four tables:
