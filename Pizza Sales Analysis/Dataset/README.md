@@ -1,4 +1,4 @@
-```markdown
+
 # 🍕 Pizza Sales Analysis — MySQL Data Analytics Project
 
 ---
