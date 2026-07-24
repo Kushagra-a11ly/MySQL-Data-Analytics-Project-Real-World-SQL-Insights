@@ -287,7 +287,7 @@ SELECT student_id,
 FROM extracurricular_activities
 GROUP BY student_id;
 
--- 50. Median grade (using window function).
+-- 50. Median grade.
 SELECT semester,
        AVG(grade_numeric) AS median_grade
 FROM (
