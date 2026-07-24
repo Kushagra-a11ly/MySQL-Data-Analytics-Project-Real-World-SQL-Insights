@@ -76,6 +76,3 @@ This directory acts as a question bank for SQL practice. These questions are ide
 
 ---
 
-<p align="center">
-  <i>Built for analysts who learn best by doing. 🧑‍💻</i>
-</p>
