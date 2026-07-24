@@ -1,74 +1,81 @@
-📺 Netflix Movies & TV Shows – SQL Questions
+# 📺 Netflix Movies & TV Shows 
 
-This folder contains all the SQL questions designed for analyzing the Netflix Movies and TV Shows dataset. 
+A structured question bank of SQL queries designed for analyzing the Netflix Movies and TV Shows dataset. Explore genres, release trends, director contributions, and content distribution across countries — all through progressively challenging SQL problems.
 
-These questions help explore various aspects of the dataset, including genres, release trends, director contributions, and content distribution across countries.
+---
 
-📘 Overview
+## 📘 Overview
 
-The questions in this section are crafted to strengthen SQL skills while uncovering meaningful insights from the Netflix dataset. 
+The questions in this section are crafted to strengthen SQL skills while uncovering meaningful insights from the Netflix dataset. They range from simple data retrieval to advanced analysis using joins, aggregations, subqueries, and window functions.
 
-They range from simple data retrieval to advanced analysis using joins, aggregations, subqueries, and window functions.
+---
 
-📝 Types of Questions Included
+## 📝 Types of Questions Included
 
-1️⃣ Basic-Level Questions
+### 1️⃣ Basic Level
+- Retrieve selected columns
+- Filter data using conditions
+- Sort results
+- Explore unique values
 
-Retrieve selected columns
+### 2️⃣ Intermediate Level
+- Aggregate data
+- Use `GROUP BY` and `HAVING`
+- Apply `JOIN` operations
+- Analyze patterns across categories (genres, ratings, countries)
 
-Filter data using conditions
+### 3️⃣ Advanced Level
+- Complex subqueries
+- CTE-based queries
+- Window functions for ranking and distribution analysis
+- Multi-table insights
 
-Sort results
+---
 
-Explore unique values
+## 🎯 What You'll Learn
 
-2️⃣ Intermediate-Level Questions
+- How to break down real-world datasets into structured analytical questions
+- How to write SQL queries that answer business and content-related questions
+- How to find patterns in global content consumption
+- How to evaluate trends in movies and TV show production over the years
 
-Aggregate data
+---
 
-Use GROUP BY and HAVING
-
-Apply JOIN operations
-
-Analyze patterns across categories (genres, ratings, countries)
-
-3️⃣ Advanced-Level Questions
-
-Complex subqueries
-
-CTE-based queries
-
-Window functions for ranking and distribution analysis
-
-Multi-table insights
-
-🎯 What You’ll Learn
-
-How to break down real-world datasets into structured analytical questions
-
-How to write SQL queries that answer business and content-related questions
-
-How to find patterns in global content consumption
-
-How to evaluate trends in movies and TV show production over the years
-
-📂 Folder Purpose
+## 📂 Folder Purpose
 
 This directory acts as a question bank for SQL practice. These questions are ideal for:
 
-Portfolio projects
+| Use Case | Description |
+|---|---|
+| **Portfolio Projects** | Showcase analytical thinking with a well-known public dataset |
+| **Interview Preparation** | Practice the query patterns most commonly tested in data roles |
+| **SQL Learning & Revision** | Reinforce concepts from basics to advanced techniques |
+| **Analytics Case Studies** | Derive real insights from entertainment industry data |
 
-Interview preparation
+---
 
-SQL learning and revision
+## 🚀 How to Use
 
-Analytics case studies
+1. **Open any SQL client** — MySQL Workbench, DBeaver, VS Code SQL Tools, or similar.
 
-🚀 How to Use
+2. **Load the Netflix dataset** tables into your database.
 
-Open any SQL client (MySQL Workbench, VS Code SQL Tools, DBeaver, etc.).
+3. **Execute questions one by one**, starting from Basic and working up to Advanced.
 
-Load the Netflix dataset tables.
-Execute the questions one by one.
+4. **Challenge yourself** — try rewriting each query in multiple ways to improve SQL fluency.
 
-Try rewriting them in multiple ways to improve SQL fluency.
+---
+
+## 🛠️ Concepts Covered
+
+| Level | SQL Concepts |
+|---|---|
+| **Basic** | `SELECT`, `WHERE`, `ORDER BY`, `DISTINCT` |
+| **Intermediate** | `GROUP BY`, `HAVING`, `JOIN`, `COUNT`, `AVG` |
+| **Advanced** | `CTE`, `Subqueries`, `RANK()`, `ROW_NUMBER()`, `PARTITION BY` |
+
+---
+
+<p align="center">
+  <i>Built for analysts who learn best by doing. 🧑‍💻</i>
+</p>
