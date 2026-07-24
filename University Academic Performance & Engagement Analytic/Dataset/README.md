@@ -164,5 +164,3 @@ Open `university_analytics.xlsx` in Excel or Google Sheets — each table is a s
 | Missing values | 1 (grade_numeric) |
 
 ---
-
-*Dataset created for educational and analytical purposes.*
